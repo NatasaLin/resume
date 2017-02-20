@@ -1,0 +1,38 @@
+doctype html
+html
+    head(lang="en")
+        title Natasa resume
+        meta(http-equiv="X-UA-Compatible", content="IE=edge; charset=UTF-8")
+        meta(name="description", content="Natasa's resume")
+        meta(name="keywords", content="natasa, resume")
+        
+        link(rel="stylesheet" href="../public/stylesheets/themes/default/default.css" type="text/css" media="screen")
+        link(rel="stylesheet" href="../public/stylesheets/themes/light/light.css" type="text/css" media="screen")
+        link(rel="stylesheet" href="../public/stylesheets/themes/dark/dark.css" type="text/css" media="screen")
+        link(rel="stylesheet" href="../public/stylesheets/themes/bar/bar.css" type="text/css" media="screen")
+        link(rel="stylesheet" href="../public/stylesheets/nivo-slider.css" type="text/css" media="screen")
+        
+        link(rel="stylesheet", href="css/all.css")
+        
+        script(src="https://code.jquery.com/jquery-1.12.4.min.js", integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=", crossorigin="anonymous")
+        script(src="../public/javascripts/jquery.nivo.slider.js", type="text/javascript")
+        script(type="text/javascript", src="js/all.js")
+    body
+        header
+            ul
+                li Web Design
+                li Graphic Design
+                li Illustrations
+                li Films
+                li Handicrafts
+            div.slider-wrapper.theme-default
+                div#slider.nivoslider
+                    a(href="https://tw.google.com")
+                    img(src="images/bnpic_graphic.jpg", data-thumb="images/bnpic_graphic.jpg", alt="")
+                    a(href="https://tw.google.com")
+                    img(src="images/bnpic_web.jpg", data-thumb="images/bnpic_web.jpg", alt="")
+            div.logo
+                img(src="images/logo01.svg", alt="")
+            h1 NATASA RESUME
+            
+        script(type="text/javascript") $(window).load(function() {$('#slider').nivoSlider();});
