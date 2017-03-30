@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="279px" height="547px" viewBox="0 0 279 547" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="208.04056 487.743629 88.0057774 487.743629 88.0057774 367.828844 208.04056 367.828844 208.04056 487.743629"></polygon>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-46.000000, -273.000000)">
+            <g id="Page-1" transform="translate(46.000000, 273.000000)">
+                <polygon id="Fill-1" fill="#33CCCC" points="6.24801739 107.551181 87.5260522 107.551181 87.5260522 97.6064557 6.24801739 97.6064557"></polygon>
+                <polygon id="Fill-2" fill="#33CCCC" points="108.211977 65.6489451 235.935195 53.3121097 101.179595 0.065443038"></polygon>
+                <polygon id="Fill-3" fill="#33CCCC" points="231.637122 149.504278 206.671957 185.042717 118.752687 70.8292996"></polygon>
+                <polygon id="Fill-4" fill="#33CCCC" points="0 181.685907 95.5269913 181.685907 44.4790957 101.710464"></polygon>
+                <polygon id="Fill-5" fill="#33CCCC" points="211.161464 58.9812236 102.714177 154.831013 135.605777 186.970464"></polygon>
+                <polygon id="Fill-9" fill="#33CCCC" points="174.29216 261.686367 37.4131861 466.921937 25.7553252 459.164637 162.636369 253.927"></polygon>
+                <polygon id="Fill-11" fill="#33CCCC" points="45.2346939 105.18843 95.5292678 20.4204979 0.000206956522 20.4204979"></polygon>
+                <polyline id="Fill-13" fill="#33CCCC" points="49.9980052 338.817122 49.9980052 357.424717 196.937136 357.424717 196.937136 322.243958 64.4849617 256.375139 64.4849617 239.675857 167.963223 239.576616 167.963223 256.1167 188.658875 245.779148 188.658875 229.239063 49.9980052 229.239063 49.9980052 260.251722 184.519744 328.353451 184.519744 345.019654 70.6936574 345.019654 70.6936574 326.412059"></polyline>
+                <text id="PORTFOLIO" font-family="Helvetica" font-size="48" font-weight="normal" fill="#FF7BAC">
+                    <tspan x="4" y="546">PORTFOLIO</tspan>
+                </text>
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-7"></g>
+                <path d="M208.04056,426.82319 C208.04056,459.405089 181.169325,487.744456 148.023169,487.744456 C114.877012,487.744456 88.0057774,459.405089 88.0057774,426.82319 C88.0057774,394.241291 114.877012,367.828844 148.023169,367.828844 C181.169325,367.828844 208.04056,394.241291 208.04056,426.82319" id="Fill-6" fill="#33CCCC" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>
