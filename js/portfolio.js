@@ -6,6 +6,7 @@ $(document).ready(function(){
         $(".rightnav").toggleClass('open');
         $("#coverbox").toggleClass('open');
         $("#link-resume").toggleClass('open');
+        $(".button-box").toggleClass('open')
 	});    
 // external js: isotope.pkgd.js
 
@@ -17,7 +18,7 @@ var $grid = $('.grid').isotope({
   masonry: {
     // use element for option
     columnWidth: 180,
-    gutter: 10
+    gutter: 0
   },
   getSortData: {
     category: '[data-category]', // value of attribute
@@ -73,7 +74,7 @@ var iso = new Isotope( grid, {
   itemSelector: '.design-item',
   masonry: {
     columnWidth: 180,
-    gutter: 10
+    gutter: 0
   }
 });
 

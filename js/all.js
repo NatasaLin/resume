@@ -44,7 +44,7 @@ $(document).ready(function() {
     svg.style.MozTransform = transformValue;
     svg.style.OTransform = transformValue;
     svg.style.transform = transformValue;
-    svg.style.transformOrigin = (0,0)
+    svg.style.transformOrigin = (0,0,0)
 
     
     
