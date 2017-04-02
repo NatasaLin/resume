@@ -79,6 +79,8 @@ var iso = new Isotope( grid, {
 });
 
 
+
+  
 grid.addEventListener( 'click', function( event ) {
   var target = event.target;
   // only click on itemContent
@@ -87,9 +89,10 @@ grid.addEventListener( 'click', function( event ) {
   }
   
   var itemElem = target.parentNode;
-  itemElem.classList.toggle('is-expanded');
+  itemElem.classList.toggle('is-expanded1');
   iso.layout();
 });
+    
     
 grid.addEventListener( 'click', function( event ) {
   var target = event.target;
@@ -99,9 +102,8 @@ grid.addEventListener( 'click', function( event ) {
   }
   
   var itemElem = target.parentNode;
-  itemElem.classList.toggle('is-expanded');
+  itemElem.classList.toggle('is-expanded2');
   iso.layout();
 });
-    
     
 })

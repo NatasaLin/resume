@@ -39,7 +39,7 @@ a:active {
     height: 120px;
   }
 }
-@media screen and (max-width: 595px) {
+@media screen and (max-width: 650px) {
   .wrapper header .navbar {
     height: 80px;
   }
@@ -50,7 +50,7 @@ a:active {
   float: right;
   margin: 118px 20px 150px 0px;
 }
-@media screen and (max-width: 595px) {
+@media screen and (max-width: 650px) {
   .wrapper header .slider-wrapper {
     float: none;
     width: 100vw;
@@ -100,7 +100,7 @@ a:active {
   -o-transition: 0.25s ease-in-out;
   transition: 0.25s ease-in-out;
 }
-@media screen and (max-width: 595px) {
+@media screen and (max-width: 650px) {
   .wrapper header nav #nav-icon span {
     height: 6px;
   }
@@ -116,7 +116,7 @@ a:active {
     top: 18px;
   }
 }
-@media screen and (max-width: 595px) {
+@media screen and (max-width: 650px) {
   .wrapper header nav #nav-icon span:nth-child(2),
   .wrapper header nav #nav-icon span:nth-child(3) {
     top: 12px;
@@ -127,12 +127,12 @@ a:active {
     top: 36px;
   }
 }
-@media screen and (max-width: 595px) {
+@media screen and (max-width: 650px) {
   .wrapper header nav #nav-icon span:nth-child(4) {
     top: 24px;
   }
 }
-@media screen and (max-width: 768px) and (max-width: 595px) {
+@media screen and (max-width: 768px) and (max-width: 650px) {
   .wrapper header nav #nav-icon {
     width: 45px;
     height: 35px;
@@ -146,7 +146,7 @@ a:active {
     left: 50%;
   }
 }
-@media screen and (max-width: 595px) {
+@media screen and (max-width: 650px) {
   .wrapper header nav #nav-icon.open span:nth-child(1) {
     top: 12px;
   }
@@ -174,7 +174,7 @@ a:active {
     left: 50%;
   }
 }
-@media screen and (max-width: 595px) {
+@media screen and (max-width: 650px) {
   .wrapper header nav #nav-icon.open span:nth-child(4) {
     top: 12px;
   }
@@ -359,7 +359,7 @@ a:active {
     left: 10px;
   }
 }
-@media screen and (max-width: 595px) {
+@media screen and (max-width: 650px) {
   .wrapper header .logom {
     left: 5px;
   }
@@ -388,7 +388,7 @@ a:active {
     background-size: 45%;
   }
 }
-@media screen and (min-width: 425px) and (max-width: 595px) {
+@media screen and (min-width: 425px) and (max-width: 650px) {
   .wrapper header .logom i#logom {
     background-size: 60%;
   }
@@ -402,7 +402,7 @@ a:active {
   width: 90%;
   margin: 0 auto;
 }
-@media screen and (max-width: 595px) {
+@media screen and (max-width: 650px) {
   .wrapper #about {
     padding-bottom: 150px;
   }
@@ -800,7 +800,7 @@ section#timeline-section #timeline .bar .year:first-child .year-text {
   -webkit-border-radius: 80px;
   border-radius: 80px;
 }
-@media screen and (max-width: 595px) {
+@media screen and (max-width: 650px) {
   #coverletter .contect .iconbar .icon i {
     width: 60px;
     height: 60px;
@@ -843,7 +843,7 @@ h2 {
   color: #ff7bac;
   display: inline;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 645px) {
   h2 {
     display: none;
   }
@@ -954,7 +954,7 @@ header nav {
     transition: left 1s;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 595px) {
+@media screen and (max-width: 650px) {
   header nav .rightnav #link-resume {
     top: 60px;
   }
@@ -985,7 +985,7 @@ header nav .rightnav #link-resume a {
     transition: left 1s;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 595px) {
+@media screen and (max-width: 650px) {
   header nav .rightnav #link-resume.open {
     top: 60px;
     left: 64%;
@@ -1014,7 +1014,7 @@ header nav .button-box {
     transition: left 1s;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 595px) {
+@media screen and (max-width: 650px) {
   header nav .button-box {
     top: 112px;
   }
@@ -1080,7 +1080,7 @@ header nav .button-box .sort .button-group:after {
     transition: left 1s;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 595px) {
+@media screen and (max-width: 650px) {
   header nav .button-box.open {
     left: -3%;
   }
@@ -1122,19 +1122,19 @@ header nav .button-box .sort .button-group:after {
   cursor: pointer;
 }
 /* both item and item content change size */
-.design-item.is-expanded,
-.design-item.is-expanded .item-content-h {
+.design-item.is-expanded1,
+.design-item.is-expanded1 .item-content-h {
   z-index: 2;
   width: 540px;
   height: 360px;
 }
-.design-item.is-expanded,
-.design-item.is-expanded .item-content-v {
+.design-item.is-expanded2,
+.design-item.is-expanded2 .item-content-v {
   width: 360px;
   height: 540px;
 }
-.design-item.is-expanded .item-content-h,
-.design-item.is-expanded .item-content-v {
+.design-item.is-expanded1 .item-content-h,
+.design-item.is-expanded2 .item-content-v {
   background: #f90;
 }
 /* ---- isotope ---- */
@@ -1381,18 +1381,21 @@ header nav .button-box .sort .button-group:after {
     opacity: 0;
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   }
-  #portfolios .grid .design-item.is-expanded .item-content-h:before,
-  #portfolios .grid .design-item.is-expanded .item-content-v:before {
+  #portfolios .grid .design-item.is-expanded1 .item-content-h:before {
     opacity: 0;
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   }
-  #portfolios .grid .design-item.is-expanded .item-content-h:hover:before {
+  #portfolios .grid .design-item.is-expanded1 .item-content-h:hover:before {
     width: 540px;
     height: 360px;
     opacity: 0.5;
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   }
-  #portfolios .grid .design-item.is-expanded .item-content-v:hover:before {
+  #portfolios .grid .design-item.is-expanded2 .item-content-v:before {
+    opacity: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  }
+  #portfolios .grid .design-item.is-expanded2 .item-content-v:hover:before {
     width: 360px;
     height: 540px;
     opacity: 0.5;
