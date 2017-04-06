@@ -39,7 +39,7 @@ a:active {
     height: 120px;
   }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 736px) {
   .wrapper header .navbar {
     height: 80px;
   }
@@ -50,7 +50,7 @@ a:active {
   float: right;
   margin: 118px 20px 150px 0px;
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 736px) {
   .wrapper header .slider-wrapper {
     float: none;
     width: 100vw;
@@ -100,7 +100,7 @@ a:active {
   -o-transition: 0.25s ease-in-out;
   transition: 0.25s ease-in-out;
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 736px) {
   .wrapper header nav #nav-icon span {
     height: 6px;
   }
@@ -116,7 +116,7 @@ a:active {
     top: 18px;
   }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 736px) {
   .wrapper header nav #nav-icon span:nth-child(2),
   .wrapper header nav #nav-icon span:nth-child(3) {
     top: 12px;
@@ -127,12 +127,12 @@ a:active {
     top: 36px;
   }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 736px) {
   .wrapper header nav #nav-icon span:nth-child(4) {
     top: 24px;
   }
 }
-@media screen and (max-width: 768px) and (max-width: 650px) {
+@media screen and (max-width: 768px) and (max-width: 736px) {
   .wrapper header nav #nav-icon {
     width: 45px;
     height: 35px;
@@ -146,7 +146,7 @@ a:active {
     left: 50%;
   }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 736px) {
   .wrapper header nav #nav-icon.open span:nth-child(1) {
     top: 12px;
   }
@@ -174,7 +174,7 @@ a:active {
     left: 50%;
   }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 736px) {
   .wrapper header nav #nav-icon.open span:nth-child(4) {
     top: 12px;
   }
@@ -299,7 +299,7 @@ a:active {
     padding-top: 500px;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 595px) {
+@media screen and (max-width: 736px) {
   .wrapper header .logo {
     left: 5px;
     padding-top: 30vh;
@@ -326,7 +326,7 @@ a:active {
   height: 496px;
   background: url("../images/logo01.svg") no-repeat top left;
 }
-@media screen and (min-width: 480px) and (max-width: 595px) {
+@media screen and (max-width: 736px) {
   .wrapper header .logo i.logoimg {
     width: 380px;
     background-size: 100%;
@@ -359,7 +359,7 @@ a:active {
     left: 10px;
   }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 736px) {
   .wrapper header .logom {
     left: 5px;
   }
@@ -388,7 +388,7 @@ a:active {
     background-size: 45%;
   }
 }
-@media screen and (min-width: 425px) and (max-width: 650px) {
+@media screen and (min-width: 425px) and (max-width: 736px) {
   .wrapper header .logom i#logom {
     background-size: 60%;
   }
@@ -402,7 +402,7 @@ a:active {
   width: 90%;
   margin: 0 auto;
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 736px) {
   .wrapper #about {
     padding-bottom: 150px;
   }
@@ -444,7 +444,7 @@ section#timeline-section #timeline {
   z-index: 1;
   left: 0;
 }
-@media screen and (min-width: 480px) and (max-width: 595px) {
+@media screen and (max-width: 736px) {
   section#timeline-section #timeline {
     height: 200%;
     width: 200%;
@@ -492,7 +492,7 @@ section#timeline-section #timeline .bar {
   perspective: 1000;
   will-change: transform;
 }
-@media screen and (min-width: 480px) and (max-width: 595px) {
+@media screen and (max-width: 736px) {
   section#timeline-section #timeline .bar {
     top: 600px;
   }
@@ -729,7 +729,7 @@ section#timeline-section #timeline .bar .year:first-child .year-text {
     padding-top: 90%;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 595px) {
+@media screen and (max-width: 736px) {
   #coverletter {
     padding-top: 80%;
   }
@@ -800,7 +800,7 @@ section#timeline-section #timeline .bar .year:first-child .year-text {
   -webkit-border-radius: 80px;
   border-radius: 80px;
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 736px) {
   #coverletter .contect .iconbar .icon i {
     width: 60px;
     height: 60px;
@@ -843,7 +843,7 @@ h2 {
   color: #ff7bac;
   display: inline;
 }
-@media screen and (max-width: 645px) {
+@media screen and (max-width: 736px) {
   h2 {
     display: none;
   }
@@ -954,7 +954,7 @@ header nav {
     transition: left 1s;
   }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 736px) {
   header nav .rightnav #link-resume {
     top: 60px;
   }
@@ -985,7 +985,7 @@ header nav .rightnav #link-resume a {
     transition: left 1s;
   }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 736px) {
   header nav .rightnav #link-resume.open {
     top: 60px;
     left: 64%;
@@ -1008,13 +1008,13 @@ header nav .button-box {
     left: 100%;
     top: 160px;
     z-index: 11;
-    -webkit-transition: left 1s;
+    -webkit-transitionv: left 1s;
     -moz-transition: left 1s;
     -o-transition: left 1s;
     transition: left 1s;
   }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 736px) {
   header nav .button-box {
     top: 112px;
   }
@@ -1080,9 +1080,9 @@ header nav .button-box .sort .button-group:after {
     transition: left 1s;
   }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 736px) {
   header nav .button-box.open {
-    left: -3%;
+    left: 15%;
   }
 }
 @media screen and (max-width: 479px) {
@@ -1096,6 +1096,12 @@ header nav .button-box .sort .button-group:after {
   height: 180px;
   position: relative;
   float: left;
+}
+@media screen and (max-width: 360px) {
+  .design-item {
+    width: 160px;
+    height: 160px;
+  }
 }
 .design-item > * {
   margin: 0;
@@ -1116,6 +1122,13 @@ header nav .button-box .sort .button-group:after {
   -o-transition: width 0.4s, height 0.4s;
   transition: width 0.4s, height 0.4s;
 }
+@media screen and (max-width: 360px) {
+  .item-content-h,
+  .item-content-v {
+    width: 160px;
+    height: 160px;
+  }
+}
 .design-item:hover .item-content-h,
 .design-item:hover .item-content-v {
   background: #8cf;
@@ -1128,10 +1141,25 @@ header nav .button-box .sort .button-group:after {
   width: 540px;
   height: 360px;
 }
+@media screen and (max-width: 360px) {
+  .design-item.is-expanded1,
+  .design-item.is-expanded1 .item-content-h {
+    width: 480px;
+    height: 320px;
+  }
+}
 .design-item.is-expanded2,
 .design-item.is-expanded2 .item-content-v {
+  z-index: 2;
   width: 360px;
   height: 540px;
+}
+@media screen and (max-width: 360px) {
+  .design-item.is-expanded2,
+  .design-item.is-expanded2 .item-content-v {
+    width: 320px;
+    height: 480px;
+  }
 }
 .design-item.is-expanded1 .item-content-h,
 .design-item.is-expanded2 .item-content-v {
@@ -1155,6 +1183,11 @@ header nav .button-box .sort .button-group:after {
   background: #fff;
   margin: 0 auto;
   padding: 0 5% 10px 5%;
+}
+@media screen and (max-width: 398px) {
+  #portfolios .grid {
+    padding: 0 0 10px 0;
+  }
 }
 #portfolios .grid .design-item a {
   position: absolute;
