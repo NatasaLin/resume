@@ -383,14 +383,14 @@ a:active {
   -o-transform-origin: 0 0;
   transform-origin: 0 0;
 }
-@media screen and (min-width: 320px) and (max-width: 424px) {
-  .wrapper header .logom i#logom {
-    background-size: 45%;
-  }
-}
 @media screen and (min-width: 425px) and (max-width: 736px) {
   .wrapper header .logom i#logom {
     background-size: 60%;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 424px) {
+  .wrapper header .logom i#logom {
+    background-size: 45%;
   }
 }
 .wrapper #top {

@@ -383,14 +383,14 @@ a:active {
   -o-transform-origin: 0 0;
   transform-origin: 0 0;
 }
-@media screen and (min-width: 320px) and (max-width: 424px) {
-  .wrapper header .logom i#logom {
-    background-size: 45%;
-  }
-}
 @media screen and (min-width: 425px) and (max-width: 736px) {
   .wrapper header .logom i#logom {
     background-size: 60%;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 424px) {
+  .wrapper header .logom i#logom {
+    background-size: 45%;
   }
 }
 .wrapper #top {
@@ -936,6 +936,11 @@ header nav {
     height: 120px;
   }
 }
+@media screen and (max-width: 736px) {
+  header nav {
+    height: 80px;
+  }
+}
 @media screen and (max-width: 768px) {
   header nav .rightnav {
     z-index: 11;
@@ -1137,7 +1142,6 @@ header nav .button-box .sort .button-group:after {
 /* both item and item content change size */
 .design-item.is-expanded1,
 .design-item.is-expanded1 .item-content-h {
-  z-index: 2;
   width: 540px;
   height: 360px;
 }
@@ -1150,7 +1154,6 @@ header nav .button-box .sort .button-group:after {
 }
 .design-item.is-expanded2,
 .design-item.is-expanded2 .item-content-v {
-  z-index: 2;
   width: 360px;
   height: 540px;
 }
@@ -1160,6 +1163,10 @@ header nav .button-box .sort .button-group:after {
     width: 320px;
     height: 480px;
   }
+}
+.design-item.is-expanded1,
+.design-item.is-expanded2 {
+  z-index: 2;
 }
 .design-item.is-expanded1 .item-content-h,
 .design-item.is-expanded2 .item-content-v {

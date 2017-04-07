@@ -7,10 +7,13 @@ $(document).ready(function(){
         $("#coverbox").toggleClass('open');
         $("#link-resume").toggleClass('open');
         $(".button-box").toggleClass('open')
-	});    
+	}); 
+    
+    
 // external js: isotope.pkgd.js
 
 enquire.register("screen and (max-width: 360px)", {
+    
     setup: function() {
         // init Isotope
         var $grid = $('.grid').isotope({
@@ -78,9 +81,6 @@ enquire.register("screen and (max-width: 360px)", {
             gutter: 0
           }
         });
-
-
-
 
         grid.addEventListener( 'click', function( event ) {
           var target = event.target;
@@ -167,7 +167,7 @@ enquire.register("screen and (max-width: 360px)", {
 
         // external js: isotope.pkgd.js
 
-        var grid = document.querySelector('.grid');
+//        var grid = document.querySelector('.grid');
         var iso = new Isotope( grid, {
           itemSelector: '.design-item',
           masonry: {
@@ -177,29 +177,29 @@ enquire.register("screen and (max-width: 360px)", {
         });
 
 
-        grid.addEventListener( 'click', function( event ) {
+        $('.gird').on( 'click', function( event ) {
           var target = event.target;
           // only click on itemContent
           if ( !target.classList.contains('item-content-h') ) {
             return;
           }
 
-          var itemElem = target.parentNode;
-          itemElem.classList.toggle('is-expanded1');
-          iso.layout();
+          var itemElem = target.parent();
+          $(itemElem).classList.toggle('is-expanded1');
+          $(iso).layout();
         });
 
 
-        grid.addEventListener( 'click', function( event ) {
+        $('.gird').on( 'click', function( event ) {
           var target = event.target;
           // only click on itemContent
           if ( !target.classList.contains('item-content-v') ) {
             return;
           }
 
-          var itemElem = target.parentNode;
-          itemElem.classList.toggle('is-expanded2');
-          iso.layout();
+          var itemElem = target.parent();
+          $(itemElem).classList.toggle('is-expanded2');
+          $(iso).layout();
         });
         // JavaScript here
         // 當CSS media query計算的視窗寬度小於360px時執行
