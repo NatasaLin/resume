@@ -21,8 +21,7 @@ enquire.register("screen and (max-width: 360px)", {
           layoutMode: 'masonry',
           masonry: {
             // use element for option
-            columnWidth: 180,
-            gutter: 0
+            columnWidth: 180
           },
           getSortData: {
             category: '[data-category]', // value of attribute
@@ -77,8 +76,7 @@ enquire.register("screen and (max-width: 360px)", {
         var iso = new Isotope( grid, {
           itemSelector: '.design-item',
           masonry: {
-            columnWidth: 180,
-            gutter: 0
+            columnWidth: 180
           }
         });
 
@@ -115,8 +113,7 @@ enquire.register("screen and (max-width: 360px)", {
           layoutMode: 'masonry',
           masonry: {
             // use element for option
-            columnWidth: 160,
-            gutter: 0
+            columnWidth: 160
           },
           getSortData: {
             category: '[data-category]', // value of attribute
@@ -171,8 +168,7 @@ enquire.register("screen and (max-width: 360px)", {
         var iso = new Isotope( grid, {
           itemSelector: '.design-item',
           masonry: {
-            columnWidth: 160,
-            gutter: 0
+            columnWidth: 160
           }
         });
 
@@ -186,7 +182,7 @@ enquire.register("screen and (max-width: 360px)", {
 
           var itemElem = target.parent();
           $(itemElem).classList.toggle('is-expanded1');
-          $(iso).layout();
+          $(iso).layout($grid);
         });
 
 
@@ -199,7 +195,7 @@ enquire.register("screen and (max-width: 360px)", {
 
           var itemElem = target.parent();
           $(itemElem).classList.toggle('is-expanded2');
-          $(iso).layout();
+          $(iso).layout($grid);
         });
         // JavaScript here
         // 當CSS media query計算的視窗寬度小於360px時執行
@@ -212,8 +208,7 @@ enquire.register("screen and (max-width: 360px)", {
           layoutMode: 'masonry',
           masonry: {
             // use element for option
-            columnWidth: 180,
-            gutter: 0
+            columnWidth: 180
           },
           getSortData: {
             category: '[data-category]', // value of attribute
@@ -268,8 +263,7 @@ enquire.register("screen and (max-width: 360px)", {
         var iso = new Isotope( grid, {
           itemSelector: '.design-item',
           masonry: {
-            columnWidth: 180,
-            gutter: 0
+            columnWidth: 180
           }
         });
 
