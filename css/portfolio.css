@@ -22,8 +22,8 @@ a:active {
   overflow: hidden;
 }
 @media screen and (min-width: 1920px) and (max-width: 2560px) {
-  .wrapper {
-    margin: 0 200px;
+  .wrapper header {
+    width: 85%;
   }
 }
 .wrapper header .navbar {
@@ -185,7 +185,7 @@ a:active {
 }
 @media screen and (min-width: 1920px) and (max-width: 2560px) {
   .wrapper header nav .rightnav {
-    margin-right: 430px;
+    margin-right: 200px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -285,7 +285,7 @@ a:active {
 .wrapper header .logo {
   z-index: 100;
   position: absolute;
-  padding-top: 200px;
+  padding-top: 150px;
   left: 35px;
 }
 @media screen and (min-width: 1920px) and (max-width: 2560px) {
@@ -323,8 +323,8 @@ a:active {
 .wrapper header .logo i.logoimg {
   display: block;
   width: 700px;
-  height: 496px;
-  background: url("../images/logo01.svg") no-repeat top left;
+  height: 550px;
+  background: url("../images/natasalogoA.gif") no-repeat top left;
 }
 @media screen and (max-width: 736px) {
   .wrapper header .logo i.logoimg {
@@ -351,7 +351,7 @@ a:active {
 }
 @media screen and (min-width: 1920px) and (max-width: 2560px) {
   .wrapper header .logom {
-    left: 200px;
+    left: 120px;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 768px) {
@@ -1013,6 +1013,11 @@ header nav .button-box {
   position: absolute;
   left: 180px;
   top: 100px;
+}
+@media screen and (min-width: 1920px) and (max-width: 2560px) {
+  header nav .button-box {
+    left: 250px;
+  }
 }
 @media screen and (max-width: 768px) {
   header nav .button-box {

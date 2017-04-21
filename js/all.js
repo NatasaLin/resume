@@ -55,7 +55,7 @@ $(document).ready(function() {
 var initTopPosition= $('#logosvg').offset().top;   
 $(window).scroll(function(){
     if($(window).scrollTop() > initTopPosition)
-        $('#logosvg').css({'position':'fixed','top':'-105px'});
+        $('#logosvg').css({'position':'fixed','top':'-120px'});
     else
         $('#logosvg').css({'position':'absolute','top':initTopPosition+'px'});
 });
