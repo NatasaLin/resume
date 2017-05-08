@@ -23,12 +23,18 @@ a:active {
 }
 @media screen and (min-width: 1920px) and (max-width: 2560px) {
   .wrapper header {
-    width: 85%;
+    width: 93%;
   }
 }
 .wrapper header .navbar {
+  -ms-filter: "alpha(opacity=@calc_val)";
+  -moz-opacity: 0.9;
+  -khtml-opacity: 0.9;
+  opacity: 0.9;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
   transform: translate3d(0, 0, 0);
   position: fixed;
+  top: 0px;
   width: 100vw;
   height: 135px;
   z-index: -99;
@@ -45,18 +51,90 @@ a:active {
   }
 }
 .wrapper header .slider-wrapper {
-  width: 83vw;
-  max-width: 1600px;
-  float: right;
-  margin: 118px 20px 150px 0px;
+  margin: 118px 0px 0px 14.3%;
 }
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 768px) {
   .wrapper header .slider-wrapper {
-    float: none;
     width: 100vw;
-    margin: 80px auto;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0px auto;
     position: absolute;
   }
+}
+.wrapper header .slider-wrapper .slider {
+  position: absolute;
+}
+.wrapper header .slider-wrapper .slider img {
+  position: absolute;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper header .slider-wrapper .slider img {
+    width: 83vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wrapper header .slider-wrapper .slider img {
+    width: auto;
+    height: 100vh;
+  }
+}
+.wrapper header .slider-wrapper .slider #player {
+  position: absolute;
+  visibility: hidden;
+}
+.wrapper header .slider-wrapper #menudot {
+  position: relative;
+  width: 250px;
+  margin: auto;
+  top: 79vh;
+  display: -webkit-box; /* Chrome 4+, Safari 3.1, iOS Safari 3.2+ */
+  display: -moz-box; /* Firefox 17- */
+  display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */
+  display: -moz-flex; /* Firefox 18+ */
+  display: -ms-flexbox; /* IE 10 */
+  display: flex; /* Chrome 29+, Firefox 22+, IE 11+, Opera 12.1/17/18, Android 4.4+ */
+  -webkit-align-items: center; /* Safari */
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .wrapper header .slider-wrapper #menudot {
+    top: 90vh;
+  }
+}
+.wrapper header .slider-wrapper #menudot span {
+  -ms-filter: "alpha(opacity=@calc_val)";
+  -moz-opacity: 0.6;
+  -khtml-opacity: 0.6;
+  opacity: 0.6;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  background-color: #4a4a4a;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border: 4px solid #fff;
+  -khtml-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  z-index: 100;
+  cursor: pointer;
+}
+.wrapper header .slider-wrapper #menudot .dot-0 {
+  background-color: #fff;
+  border: 8px solid #3cc;
+}
+.wrapper header .slider-wrapper #menudot .dot-1 {
+  left: 50px;
+}
+.wrapper header .slider-wrapper #menudot .dot-2 {
+  left: 100px;
+}
+.wrapper header .slider-wrapper #menudot .dot-3 {
+  left: 150px;
+}
+.wrapper header .slider-wrapper #menudot .dot-4 {
+  left: 200px;
 }
 .wrapper header nav #nav-icon {
   display: none;
@@ -237,16 +315,11 @@ a:active {
   font-size: 4em;
   color: #9b9b9b;
   list-style: none;
-  display: none;
 }
 @media screen and (max-width: 768px) {
-  .wrapper header nav .rightnav ul li {
-    font-size: 2.5em;
-    color: #4a4a4a;
-  }
 }
 @media screen and (max-width: 768px) {
-  .wrapper header nav .rightnav.open {
+  .rightnav.open {
     margin-right: 5%;
     -webkit-transition: margin-right 1s;
     -moz-transition: margin-right 1s;
@@ -254,11 +327,11 @@ a:active {
     transition: margin-right 1s;
   }
 }
-.wrapper header nav #coverbox {
+#coverbox {
   position: absolute;
 }
 @media screen and (max-width: 768px) {
-  .wrapper header nav #coverbox {
+  #coverbox {
     z-index: 10;
     width: 100vw;
     height: 100vh;
@@ -274,7 +347,7 @@ a:active {
   }
 }
 @media screen and (max-width: 768px) {
-  .wrapper header nav #coverbox.open {
+  #coverbox.open {
     left: 0px;
     -webkit-transition: left 1s;
     -moz-transition: left 1s;
@@ -282,102 +355,90 @@ a:active {
     transition: left 1s;
   }
 }
-.wrapper header .logo {
-  z-index: 100;
-  position: absolute;
-  padding-top: 150px;
+.logo {
+  z-index: 10;
+  position: relative;
+  padding-top: 3%;
   left: 35px;
 }
 @media screen and (min-width: 1920px) and (max-width: 2560px) {
-  .wrapper header .logo {
+  .logo {
     left: 200px;
   }
 }
 @media screen and (max-width: 1024px) {
-  .wrapper header .logo {
-    padding-top: 120px;
+  .logo {
+    padding-top: 80px;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 768px) {
-  .wrapper header .logo {
+  .logo {
     left: 10px;
-    padding-top: 500px;
+    padding-top: 30px;
   }
 }
 @media screen and (max-width: 736px) {
-  .wrapper header .logo {
+  .logo {
     left: 5px;
-    padding-top: 30vh;
+    padding-top: 20px;
   }
 }
-@media screen and (min-width: 425px) and (max-width: 479px) {
-  .wrapper header .logo {
-    left: 5px;
-    padding-top: 320px;
-  }
-}
-@media screen and (min-width: 320px) and (max-width: 424px) {
-  .wrapper header .logo {
-    left: 5px;
-    padding-top: 300px;
-  }
-}
-.wrapper header .logo h1 {
+.logo h1 {
   display: none;
 }
-.wrapper header .logo i.logoimg {
+.logo i.logoimg {
   display: block;
   width: 700px;
   height: 550px;
   background: url("../images/natasalogoA.gif") no-repeat top left;
 }
 @media screen and (max-width: 1024px) {
-  .wrapper header .logo i.logoimg {
+  .logo i.logoimg {
     background-size: 90%;
   }
 }
 @media screen and (max-width: 736px) {
-  .wrapper header .logo i.logoimg {
+  .logo i.logoimg {
     width: 380px;
     background-size: 100%;
   }
 }
 @media screen and (min-width: 425px) and (max-width: 479px) {
-  .wrapper header .logo i.logoimg {
+  .logo i.logoimg {
     width: 700px;
     background-size: 60%;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 424px) {
-  .wrapper header .logo i.logoimg {
+  .logo i.logoimg {
     width: 250px;
     background-size: 100%;
   }
 }
-.wrapper header .logom {
+.logom {
   z-index: -2;
   position: fixed;
   left: 35px;
 }
 @media screen and (min-width: 1920px) and (max-width: 2560px) {
-  .wrapper header .logom {
+  .logom {
     left: 120px;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 768px) {
-  .wrapper header .logom {
+  .logom {
     left: 10px;
   }
 }
 @media screen and (max-width: 736px) {
-  .wrapper header .logom {
+  .logom {
     left: 5px;
   }
 }
-.wrapper header .logom h1 {
+.logom h1 {
   display: none;
 }
-.wrapper header .logom i#logom {
+.logom i#logom {
   z-index: -1;
   display: block;
   width: 106px;
@@ -394,51 +455,51 @@ a:active {
   transform-origin: 0 0;
 }
 @media screen and (min-width: 425px) and (max-width: 736px) {
-  .wrapper header .logom i#logom {
+  .logom i#logom {
     background-size: 60%;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 424px) {
-  .wrapper header .logom i#logom {
+  .logom i#logom {
     background-size: 45%;
   }
 }
-.wrapper #top {
+#banner {
   height: 100vh;
 }
-.wrapper #about {
+#about {
   padding-top: 300px;
   padding-bottom: 300px;
   width: 90%;
   margin: 0 auto;
 }
 @media screen and (max-width: 736px) {
-  .wrapper #about {
+  #about {
     padding-bottom: 150px;
   }
 }
-.wrapper #about .column {
+#about .column {
   width: 33.33%;
   margin: 0 auto;
   display: inline-block;
   vertical-align: top;
 }
 @media screen and (max-width: 768px) {
-  .wrapper #about .column {
+  #about .column {
     width: 100%;
   }
 }
-.wrapper #about .column img {
+#about .column img {
   display: block;
   margin: 0 auto;
 }
-.wrapper #about .column p.aboutcontent {
+#about .column p.aboutcontent {
   display: block;
   margin: 1em auto;
   width: 270px;
   line-height: 1.5;
 }
-.wrapper #about .column p.aboutcontent a {
+#about .column p.aboutcontent a {
   color: #ffc0cb;
 }
 section#timeline-section .span {
@@ -450,6 +511,7 @@ section#timeline-section .span {
   left: 0;
 }
 section#timeline-section #timeline {
+  -webkit-overflow-scrolling: touch;
   height: 100%;
   width: 100%;
   overflow-y: hidden;
