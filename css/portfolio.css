@@ -1,10 +1,3 @@
-.theme-default .nivoSlider {
-  margin-bottom: -50px;
-  z-index: -1;
-}
-.theme-default .nivo-controlNav {
-  z-index: 1;
-}
 a {
   text-decoration: none;
 }
@@ -34,6 +27,7 @@ a:active {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
   transform: translate3d(0, 0, 0);
   position: fixed;
+  top: 0px;
   width: 100vw;
   height: 135px;
   z-index: -99;
@@ -49,30 +43,62 @@ a:active {
     height: 80px;
   }
 }
-.wrapper header .slider-wrapper {
-  float: right;
-  margin: 118px 20px 150px 0px;
+@media screen and (min-width: 320px) and (max-width: 424px) {
+  .wrapper header .navbar {
+    height: 60px;
+  }
 }
-@media screen and (max-width: 736px) {
+.wrapper header .slider-wrapper {
+  margin: 118px 0px 0px 14.3%;
+}
+@media screen and (max-width: 768px) {
   .wrapper header .slider-wrapper {
-    float: none;
     width: 100vw;
-    margin: 80px auto;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0px auto;
     position: absolute;
   }
 }
+.wrapper header .slider-wrapper .slider {
+  position: absolute;
+}
+.wrapper header .slider-wrapper .slider img {
+  position: absolute;
+}
 @media screen and (min-width: 1024px) {
-  .wrapper header .slider-wrapper #slider img {
+  .wrapper header .slider-wrapper .slider img {
     width: 83vw;
   }
+}
+@media screen and (max-width: 768px) {
+  .wrapper header .slider-wrapper .slider img {
+    width: auto;
+    height: 100vh;
+  }
+}
+.wrapper header .slider-wrapper .slider #player {
+  position: absolute;
+  visibility: hidden;
 }
 .wrapper header .slider-wrapper #menudot {
   position: relative;
   width: 250px;
   margin: auto;
-  top: -50px;
-  display: flex;
+  top: 79vh;
+  display: -webkit-box; /* Chrome 4+, Safari 3.1, iOS Safari 3.2+ */
+  display: -moz-box; /* Firefox 17- */
+  display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */
+  display: -moz-flex; /* Firefox 18+ */
+  display: -ms-flexbox; /* IE 10 */
+  display: flex; /* Chrome 29+, Firefox 22+, IE 11+, Opera 12.1/17/18, Android 4.4+ */
+  -webkit-align-items: center; /* Safari */
   align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .wrapper header .slider-wrapper #menudot {
+    top: 90vh;
+  }
 }
 .wrapper header .slider-wrapper #menudot span {
   -ms-filter: "alpha(opacity=@calc_val)";
@@ -241,63 +267,88 @@ a:active {
 @media screen and (max-width: 768px) {
   .wrapper header nav .rightnav {
     float: none;
-    margin-right: -110%;
-    margin-top: 130px;
-    -webkit-transition: margin-right 1s;
-    -moz-transition: margin-right 1s;
-    -o-transition: margin-right 1s;
-    transition: margin-right 1s;
+    margin-top: 10px;
+    margin-right: 4px;
   }
 }
-.wrapper header nav .rightnav #link {
-  opacity: 0;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+@media screen and (max-width: 425px) {
+  div.rightnav_up {
+    margin-top: -16px;
+  }
+}
+div.rightnav_up span.linkportpolio {
   position: relative;
+  float: right;
 }
 @media screen and (max-width: 768px) {
-  .wrapper header nav .rightnav #link {
+  div.rightnav_up span.linkportpolio {
     z-index: 11;
   }
 }
-.wrapper header nav .rightnav #link a {
+div.rightnav_up span.linkportpolio a {
   font-size: 2.5em;
   color: #ffc0cb;
   display: block;
   text-align: right;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 @media screen and (max-width: 768px) {
-  .wrapper header nav .rightnav #link a {
-    color: #fff;
+  div.rightnav_up span.linkportpolio a {
+    font-size: 1.5em;
   }
 }
-.wrapper header nav .rightnav ul {
+@media screen and (max-width: 320px) {
+  div.rightnav_up span.linkportpolio a {
+    font-size: 1em;
+  }
+}
+div.rightnav_up span.playdemo {
+  position: relative;
+  display: inline-block;
+  z-index: 12;
+  float: right;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+@media screen and (max-width: 768px) {
+  div.rightnav_up span.playdemo {
+    margin-top: 16px;
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 320px) {
+  div.rightnav_up span.playdemo {
+    margin-right: 2px;
+  }
+}
+@media screen and (max-width: 768px) {
+  div.rightnav_up span.playdemo img {
+    width: 30px;
+    height: 30px;
+  }
+}
+div.rightnav_up span.playdemo:hover svg g#player circle {
+  stroke: #3cc;
+}
+div.rightnav_up span.playdemo:hover svg g#player path {
+  fill: #3cc;
+}
+ul {
   text-align: right;
   margin-top: -2%;
 }
 @media screen and (max-width: 768px) {
-  .wrapper header nav .rightnav ul {
-    margin-top: auto;
-    z-index: 11;
+  ul {
+    display: none;
   }
 }
-.wrapper header nav .rightnav ul li {
+li {
   font-family: Arial Black;
   font-weight: bolder;
   font-size: 4em;
   color: #9b9b9b;
   list-style: none;
-}
-@media screen and (max-width: 768px) {
-}
-@media screen and (max-width: 768px) {
-  .rightnav.open {
-    margin-right: 5%;
-    -webkit-transition: margin-right 1s;
-    -moz-transition: margin-right 1s;
-    -o-transition: margin-right 1s;
-    transition: margin-right 1s;
-  }
+  line-height: 0.7em;
 }
 #coverbox {
   position: absolute;
@@ -329,42 +380,27 @@ a:active {
 }
 .logo {
   z-index: 10;
-  position: absolute;
-  padding-top: 150px;
+  position: relative;
+  padding-top: 3%;
   left: 35px;
+  width: 10px;
+  height: 10px;
 }
 @media screen and (min-width: 1920px) and (max-width: 2560px) {
   .logo {
     left: 200px;
   }
 }
-@media screen and (max-width: 1024px) {
-  .logo {
-    padding-top: 120px;
-  }
-}
 @media screen and (min-width: 480px) and (max-width: 768px) {
   .logo {
     left: 10px;
-    padding-top: 500px;
+    padding-top: 30px;
   }
 }
 @media screen and (max-width: 736px) {
   .logo {
     left: 5px;
-    padding-top: 30vh;
-  }
-}
-@media screen and (min-width: 425px) and (max-width: 479px) {
-  .logo {
-    left: 5px;
-    padding-top: 320px;
-  }
-}
-@media screen and (min-width: 320px) and (max-width: 424px) {
-  .logo {
-    left: 5px;
-    padding-top: 300px;
+    padding-top: 20px;
   }
 }
 .logo h1 {
@@ -385,12 +421,6 @@ a:active {
   .logo i.logoimg {
     width: 380px;
     background-size: 100%;
-  }
-}
-@media screen and (min-width: 425px) and (max-width: 479px) {
-  .logo i.logoimg {
-    width: 700px;
-    background-size: 60%;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 424px) {
@@ -448,7 +478,7 @@ a:active {
     background-size: 45%;
   }
 }
-#top {
+#banner {
   height: 100vh;
 }
 #about {
@@ -495,6 +525,7 @@ section#timeline-section .span {
   left: 0;
 }
 section#timeline-section #timeline {
+  -webkit-overflow-scrolling: touch;
   height: 100%;
   width: 100%;
   overflow-y: hidden;
@@ -1007,6 +1038,9 @@ header nav {
   header nav {
     height: 80px;
   }
+}
+header nav .rightnav {
+  margin-top: 20px;
 }
 @media screen and (max-width: 768px) {
   header nav .rightnav {
